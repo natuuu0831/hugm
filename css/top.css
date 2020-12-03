@@ -1,0 +1,183 @@
+#main_visual {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+#main_visual .slider img {
+  width: 100%;
+  max-width: none;
+  position: static;
+  min-width: 100%;
+  transform: none;
+}
+#main_visual .slider li {
+  position: relative;
+}
+#main_visual .inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 20rem;
+}
+#main_visual .slider .mainText {
+  font-size: 8.6rem;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+#main_visual .lead span {
+  background-color: #fff;
+  color: #d1c27f;
+  font-size: 2.6rem;
+  padding: 3px;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+#sec1 {
+  text-align: center;
+}
+#sec2 .flex {
+  align-items: center;
+}
+#sec2 .flex img {
+  margin-right: 4rem;
+}
+
+#sec3 {
+  margin-bottom: 5rem;
+}
+/* loading中のアニメーション */
+#opening {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drow01,
+#drow02 {
+  position: absolute;
+}
+#drow01 {
+  top: -33px;
+  left: 34px;
+}
+#drow02 {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+.drowWrap {
+  position: relative;
+  padding-left: 160px;
+}
+.opening__text {
+  display: none;
+  width: 30rem;
+}
+
+.st0 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  transform: translate(-145.416px, -786.928px);
+}
+
+.st1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1500; /* この行を追加 */
+  stroke-dashoffset: 1500; /* この行を追加 */
+  transform: translate(-116.621px, -850.048px);
+}
+
+@media screen and (max-width: 767px) {
+  #sec2 .flex {
+    display: block;
+  }
+  #sec2 .flex img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  #main_visual {
+    height: 90vh;
+  }
+  #main_visual .slider img {
+    max-width: none;
+    width: auto;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #main_visual li {
+    position: relative;
+    height: 90vh;
+  }
+  #main_visual .inner {
+    padding-top: 100vw;
+    z-index: 1;
+  }
+  #main_visual .slider .mainText {
+    font-size: 6.7rem;
+  }
+  #main_visual .lead span {
+    font-size: 2.3rem;
+    padding: 3px;
+  }
+  h2 {
+    text-align: center;
+  }
+  #sec3 li {
+    width: 47%;
+    margin-bottom: 5vw;
+  }
+  .buttom_more {
+    margin: 4vw auto;
+  }
+  .drowWrap {
+    position: relative;
+    padding-left: 24vw;
+  }
+  #sec3 {
+    margin-bottom: 4rem;
+  }
+  #drow01 {
+    left: 5vw;
+    top: -15.9vw;
+    width: 16vw;
+  }
+  #drow02 {
+    position: absolute;
+    bottom: -9vw;
+    width: 33vw;
+    height: auto;
+  }
+  .opening__text {
+    display: none;
+    width: 38vw;
+  }
+}

@@ -1,0 +1,39 @@
+#sec1 .inner {
+  width: 800px;
+}
+#sec1 .flexWrap {
+  align-items: center;
+}
+#sec1 .flexWrap img {
+  width: 49%;
+}
+#sec1 .flexWrap p {
+  width: 47%;
+  font-size: 1.9rem;
+}
+.bottomText {
+  margin: 5rem auto 9rem;
+  font-size: 1.9rem;
+}
+
+@media screen and (max-width: 767px) {
+  #sec1 .inner {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #sec1 .flexWrap{
+    margin-bottom: 11vw;
+  }
+  #sec1 .flexWrap img {
+    width: 100%;
+    margin-bottom: 4vw;
+  }
+  #sec1 .flexWrap p {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+  #sec1 .flexWrap:nth-child(2n) {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
