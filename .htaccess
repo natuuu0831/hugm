@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^$ hugm/ [L]
+RewriteRule ^(.+)$ hugm/$1 [L]
+</IfModule>
