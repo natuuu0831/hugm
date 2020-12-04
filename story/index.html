@@ -9,29 +9,65 @@
     <link rel="stylesheet" href="/css/slick-theme.css" />
     <link rel="stylesheet" href="/css/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/js/common.js"></script>
-    <!-- <script src="/js/top.js"></script> -->
   </head>
   <body>
     <header id="header">
       <div class="inner flex">
-        <a href="/"><img src="/images/common/logo.svg" alt="" class="logo" /></a>
-        <div class="bar">
-          <a class="menu-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </div>
+        <a href="/"
+          ><img src="/images/common/logo.svg" alt="" class="logo"
+        /></a>
+
+        <a class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <nav class="gnav">
+          <div class="gnav__wrap">
+            <div>
+              <ul class="gnav__menu">
+                <li class="gnav__menu__item">
+                  <a href="/">トップページ</a>
+                </li>
+                <li class="gnav__menu__item">
+                  <a href="/story/">開発ストーリー</a>
+                </li>
+                <li class="gnav__menu__item"><a href="#">会社概要</a></li>
+                <li class="gnav__menu__item">
+                  <a href="#">お問合せ</a>
+                </li>
+                <li class="icons gnav__menu__item">
+                  <a
+                    href="https://www.instagram.com/hugm_official/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/common/icon_instagram.png" alt=""
+                  /></a>
+
+                  <a
+                    href="https://www.facebook.com/hugmofficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/common/icon_facebook.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
-    <main>
+
+    <main id="main">
       <div id="main_visual" class="inner">
         <img src="/images/story/main_visual.jpg" alt="" />
       </div>
       <div class="t_center">
         <h2 class="t_center gold">
-          story<span class="small sub">物語に接続する</span>
+          story<span class="small sub">物語を紡ぐ</span>
         </h2>
       </div>
       <section id="sec1">
@@ -70,12 +106,21 @@
         </p>
       </section>
       <div class="t_center">
-        <a href="" class="buttom_more">more ></a>
+        <a href="/" class="buttom_more">TOP PAGE ></a>
         <div class="icons">
-          <a href="">
+          <a
+            href="https://www.instagram.com/hugm_official/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/images/common/icon_instagram.png" alt=""
           /></a>
-          <a href="">
+
+          <a
+            href="https://www.facebook.com/hugmofficial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/images/common/icon_facebook.png" alt=""
           /></a>
         </div>
@@ -84,14 +129,50 @@
     <footer id="footer">
       <div class="footerWrap inner">
         <ul class="flex">
-          <li><a href="">会社概要</a></li>
-          <li><a href="">特定商法取引法に基づく表記</a></li>
-          <li><a href="">個人情報保護について</a></li>
-          <li><a href="">利用規約</a></li>
-          <li><a href="">お問合せ</a></li>
+          <li>
+            <a
+              href="https://www.tealifeir.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >会社概要</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/help/tradelaw"
+              target="_blank"
+              rel="noopener noreferrer"
+              >特定商法取引法に基づく表記</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/help/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >個人情報保護について</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/user_data/kiyaku"
+              target="_blank"
+              rel="noopener noreferrer"
+              >利用規約</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              >お問合せ</a
+            >
+          </li>
         </ul>
         <p>Copyright © TeaLife All rights Reserved.</p>
       </div>
     </footer>
+    <script src="/js/common.js"></script>
   </body>
 </html>

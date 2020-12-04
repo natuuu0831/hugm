@@ -1,27 +1,29 @@
 $(function () {
-  $("body").hide();
-  $(window).on("load", function () {
-    $("body").fadeIn(2000);
+  $("main, header, footer").hide();
+  $(".menu-trigger").click(function () {
+    $(this).toggleClass("active");
+    $('.gnav').stop().fadeToggle();
   });
-  var flug = true;
-  $(window).on("scroll", function () {
-    if(!flug) return;
-    setTimeout(function(){
-      $('[class^="scroll"]').each(function () {
-        var height = window.parent.screen.height;
-        var scrollTop = $(window).scrollTop();
-        var scrollBtm = scrollTop + height - height / 2;
-        var targetTop = $(this).offset().top;
-        var targetBtm = targetTop + height;
-        console.log(scrollBtm, targetTop)
-        if (scrollBtm > targetTop && scrollTop < targetBtm) {
-          $(this).addClass("scrollIn");
-        } else {
-          $(this).removeClass("scrollIn");
-        }
-      });
-      flug = true;
-      return flug;
-    }, 200);
-  });
+});
+
+$(window).on("load", function () {
+  $("#main, #header, #footer").fadeIn(2000);
+});
+
+var flug = true;
+$(window).on("scroll", function () {
+  if(!flug) return;
+  setTimeout(function(){
+    $('[class^="scroll"]').each(function () {
+      var height = window.parent.screen.height;
+      var scrollTop = $(window).scrollTop();
+      var scrollBtm = scrollTop + height - height / 2;
+      var targetTop = $(this).offset().top;
+      if (scrollBtm > targetTop) {
+        $(this).addClass("scrollIn");
+      }
+    });
+    flug = true;
+    return flug;
+  }, 200);
 });

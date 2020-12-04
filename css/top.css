@@ -35,6 +35,7 @@
   background-color: #fff;
   color: #d1c27f;
   font-size: 2.6rem;
+  line-height: 2;
   padding: 3px;
 }
 
@@ -62,7 +63,7 @@ section {
   background: #fff;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +113,14 @@ section {
   stroke-dashoffset: 1500; /* この行を追加 */
   transform: translate(-116.621px, -850.048px);
 }
+#sec3 .disabled {
+  opacity: .3;
 
+}
+#sec3 .disabled a{
+  display: block;
+  pointer-events: none;
+}
 @media screen and (max-width: 767px) {
   #sec2 .flex {
     display: block;

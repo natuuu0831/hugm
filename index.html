@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="/css/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/slick.min.js"></script>
-    <script src="/js/common.js"></script>
     <script src="/js/top.js"></script>
+    <script src="/js/common.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
-    
   </head>
   <body>
     <div id="opening">
@@ -36,7 +36,7 @@
             <path
               class="st0"
               data-name="st0"
-              d="M148.871,846.494l2.906,5.184h7.614l7.289-5.184,6.938-13.253,3.02-8.291V814.124l-9.958-8.288L155.8,803.4h-6.927l6.927,5.868,3.594,9.941,7.289,10.914,3.81,3.118h8.174l21.651-23.973,3.042-9.143-3.042-10.2h-2.358l-4.929,4.626L180.439,803.4l-9.949,15.809,3.128,22.893-3.128,23.129-7.27,22.8,7.27,10.344,8.174,1.64,6.3-4.577,2.573-7.407-7.1-4.265-3.8,4.265,2.026,7.407,6.3,4.577h8.066l2.594-1.629,4.693-2.948v-7.407l-4.07-1.923-3.218,1.923-2.11,2.655,2.11,4.752,7.287,4.577h6.323l5.961-1.629,3.325-5.936-3.325-4.419h-5.961l-3.281,4.419,3.281,5.925,9.286,1.64,4.284-1.629" 
+              d="M148.871,846.494l2.906,5.184h7.614l7.289-5.184,6.938-13.253,3.02-8.291V814.124l-9.958-8.288L155.8,803.4h-6.927l6.927,5.868,3.594,9.941,7.289,10.914,3.81,3.118h8.174l21.651-23.973,3.042-9.143-3.042-10.2h-2.358l-4.929,4.626L180.439,803.4l-9.949,15.809,3.128,22.893-3.128,23.129-7.27,22.8,7.27,10.344,8.174,1.64,6.3-4.577,2.573-7.407-7.1-4.265-3.8,4.265,2.026,7.407,6.3,4.577h8.066l2.594-1.629,4.693-2.948v-7.407l-4.07-1.923-3.218,1.923-2.11,2.655,2.11,4.752,7.287,4.577h6.323l5.961-1.629,3.325-5.936-3.325-4.419h-5.961l-3.281,4.419,3.281,5.925,9.286,1.64,4.284-1.629"
             />
           </mask>
         </svg>
@@ -89,16 +89,51 @@
         <a href="/"
           ><img src="/images/common/logo.svg" alt="" class="logo"
         /></a>
-        <div class="bar">
-          <a class="menu-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </div>
+
+        <a class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="gnav">
+          <div class="gnav__wrap">
+            <div>
+              <ul class="gnav__menu">
+                <li class="gnav__menu__item">
+                  <a href="/">トップページ</a>
+                </li>
+                <li class="gnav__menu__item">
+                  <a href="/story/">開発ストーリー</a>
+                </li>
+                <li class="gnav__menu__item"><a href="#">会社概要</a></li>
+                <li class="gnav__menu__item">
+                  <a href="#">お問合せ</a>
+                </li>
+                <li class="icons gnav__menu__item">
+                  <a
+                    href="https://www.instagram.com/hugm_official/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/common/icon_instagram.png" alt=""
+                  /></a>
+
+                  <a
+                    href="https://www.facebook.com/hugmofficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/common/icon_facebook.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
-    <main>
+
+    <main id="main">
       <div id="main_visual">
         <ul class="slider">
           <li>
@@ -211,7 +246,7 @@
       </section>
       <section id="sec3" class="scroll">
         <div class="inner">
-          <h2 class="t_center gold">message</h2>
+          <h2 class="t_center gold">comming soon</h2>
           <ul class="flexWrap">
             <li>
               <a href="/story">
@@ -222,7 +257,7 @@
                 </dl>
               </a>
             </li>
-            <li>
+            <li class="disabled">
               <a href="">
                 <img src="/images/top/img03.jpg" alt="" />
                 <dl>
@@ -231,7 +266,7 @@
                 </dl></a
               >
             </li>
-            <li>
+            <li class="disabled">
               <a href="">
                 <img src="/images/top/img04.jpg" alt="" />
                 <dl>
@@ -240,7 +275,7 @@
                 </dl></a
               >
             </li>
-            <li>
+            <li class="disabled">
               <a href="">
                 <img src="/images/top/img05.jpg" alt="" />
                 <dl>
@@ -253,10 +288,19 @@
           <div class="t_center">
             <a href="" class="buttom_more">more ></a>
             <div class="icons">
-              <a href="">
+              <a
+                href="https://www.instagram.com/hugm_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/common/icon_instagram.png" alt=""
               /></a>
-              <a href="">
+
+              <a
+                href="https://www.facebook.com/hugmofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/common/icon_facebook.png" alt=""
               /></a>
             </div>
@@ -267,16 +311,50 @@
     <footer id="footer">
       <div class="footerWrap inner">
         <ul class="flex">
-          <li><a href="">会社概要</a></li>
-          <li><a href="">特定商法取引法に基づく表記</a></li>
-          <li><a href="">個人情報保護について</a></li>
-          <li><a href="">利用規約</a></li>
-          <li><a href="">お問合せ</a></li>
+          <li>
+            <a
+              href="https://www.tealifeir.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >会社概要</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/help/tradelaw"
+              target="_blank"
+              rel="noopener noreferrer"
+              >特定商法取引法に基づく表記</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/help/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >個人情報保護について</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/user_data/kiyaku"
+              target="_blank"
+              rel="noopener noreferrer"
+              >利用規約</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tealife.co.jp/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              >お問合せ</a
+            >
+          </li>
         </ul>
         <p>Copyright © TeaLife All rights Reserved.</p>
       </div>
     </footer>
     <!-- <script src="/js/vivus.min.js"></script> -->
-    
   </body>
 </html>
