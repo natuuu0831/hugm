@@ -1,10 +1,3 @@
-#sec1 .flexWrap {
-  align-items: center;
-}
-#sec1 .flexWrap img {
-  width: 49%;
-}
-
 .bottomText {
   margin: 5rem auto 9rem;
   font-size: 1.9rem;
@@ -13,19 +6,22 @@ h2.gold {
   color: #d1c27f;
   margin: 7vh auto 0 auto;
 }
-
+#sec1 {
+  background: #f6efcf;
+  padding: 5rem 0;
+  margin: 6rem 0 5rem;
+}
 #sec1 .inner {
   width: 900px;
 }
 
 #sec1 .flexWrap {
   align-items: center;
-  margin: 12vw auto;
 }
 #sec1 .flexWrap p {
   width: 47%;
   font-size: 1.9rem;
-  line-height: 2.5;
+  line-height: 1.9;
 }
 
 @media screen and (max-width: 767px) {
@@ -42,13 +38,10 @@ h2.gold {
     width: 87%;
     box-sizing: border-box;
   }
-  #sec1 .flexWrap {
-    margin: 12vw auto;
-  }
 
   #sec1 .flexWrap p {
     width: 100%;
     font-size: 1.8rem;
-    line-height: 2;
+    line-height: 1.9;
   }
 }

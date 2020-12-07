@@ -25,15 +25,15 @@
   padding-top: 18vw;
 }
 #main_visual .slider .mainText {
-  font-size: 8.6rem;
+  font-size: 6.6rem;
   color: #fff;
   line-height: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: normal;
 }
 #main_visual .lead span {
-  background-color: #fff;
-  color: #d1c27f;
+  background: rgba(209, 194, 127, 0.6);
+  color: #fff;
   font-size: 2.6rem;
   line-height: 2;
   padding: 3px;
@@ -78,7 +78,7 @@ section {
   position: absolute;
 }
 #drow01 {
-  top: -20px;
+  top: -41px;
   left: 39px;
 }
 #drow02 {
@@ -98,13 +98,13 @@ section {
 .st0 {
   fill: none;
   stroke: #fff;
-  stroke-width: 5px;
+  stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;
-  transform: translate(-70.189px, -771.509px);
+  transform: translate(-71.442px, -771.85px);
 }
 
 #sec3 .disabled {
@@ -147,6 +147,10 @@ span.Arrow-Item {
   transform: rotate(90deg) translateX(-6px);
 }
 @media screen and (max-width: 767px) {
+  #sec1 {
+    opacity: 1!important;
+    transform: translateY(0)!important;
+  }
   #sec2 .flex {
     display: block;
   }
@@ -155,7 +159,6 @@ span.Arrow-Item {
     margin-bottom: 2rem;
   }
 
- 
   #main_visual li {
     position: relative;
     height: 90vh;
