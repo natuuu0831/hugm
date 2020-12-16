@@ -3,25 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>【公式】hugm（ハグム）ナチュラルシャンプー</title>
-    <meta name="description" content="茶の実オイルでツヤツヤな髪とナチュラルな美しさを。美しい髪の先にある「つながり」を実感するブランド、hugm（ハグム）シャンプーの公式サイトです。">
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/top.css" />
-    <link rel="stylesheet" href="/css/slick-theme.css" />
-    <link rel="stylesheet" href="/css/slick.css" />
+    <meta
+      name="description"
+      content="茶の実オイルでツヤツヤな髪とナチュラルな美しさを。美しい髪の先にある「つながり」を実感するブランド、hugm（ハグム）ナチュラルシャンプーの公式サイトです。"
+    />
+    <meta
+      property="og:title"
+      content="【公式】hugm（ハグム）ナチュラルシャンプー"
+    />
+    <meta
+      property="og:site_name"
+      content="【公式】hugm（ハグム）ナチュラルシャンプー"
+    />
+    <meta
+      property="og:description"
+      content="茶の実オイルでツヤツヤな髪とナチュラルな美しさを。美しい髪の先にある「つながり」を実感するブランド、hugm（ハグム）ナチュラルシャンプーの公式サイトです。"
+    />
+    <meta property="og:url" content="http://tealife.co.jp/hugm/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/top/slide01.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="【公式】hugm（ハグム）ナチュラルシャンプー"
+    />
+    <meta
+      name="twitter:description"
+      content="茶の実オイルでツヤツヤな髪とナチュラルな美しさを。美しい髪の先にある「つながり」を実感するブランド、hugm（ハグム）ナチュラルシャンプーの公式サイトです。"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-    <script src="/js/vivus.min.js"></script>
-    <script src="/js/slick.min.js"></script>
-    <script src="/js/top.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="./js/vivus.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/top.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
     <h1>「hugm（ハグム）」ナチュラルシャンプーが紡ぐストーリー</h1>
     <div id="opening">
       <div class="drowWrap">
-        <svg
+        <!-- 一旦手書きアニメーションは保留 -->
+        <!-- <svg
           id="drow01"
           xmlns="http://www.w3.org/2000/svg"
           width="110"
@@ -30,7 +60,7 @@
         >
           <image
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            xlink:href="/images/common/logo_opening_drow01.svg"
+            xlink:href="./images/common/logo_opening_drow01.svg"
             width="51.093"
             height="77.594"
             mask="url(#clipmask)"
@@ -44,69 +74,29 @@
           </mask>
         </svg>
         <img
-          src="/images/common/logo_opening_text.svg"
+          src="./images/common/logo_opening_text.svg"
+          alt="「hugm（ハグム）ナチュラルシャンプーのロゴ"
+          class="opening__text"
+        /> -->
+        <img
+          src="./images/common/logo.svg"
           alt="「hugm（ハグム）ナチュラルシャンプーのロゴ"
           class="opening__text"
         />
       </div>
     </div>
-    <script>
+    <!-- 一旦手書きアニメーションは保留 -->
+    <!-- <script>
       new Vivus("drow01", {
         type: "scenario-sync",
         duration: 150,
         forceRender: false,
         animTimingFunction: Vivus.EASE,
       });
+    </script> -->
+    <script>
+      header();
     </script>
-    <header id="header">
-      <div class="inner flex">
-        <a href="/"
-          ><img src="/images/common/logo.svg" alt="「hugm（ハグム）ナチュラルシャンプーのロゴ" class="logo"
-        /></a>
-
-        <a class="menu-trigger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <nav class="gnav">
-          <div class="gnav__wrap">
-            <div>
-              <ul class="gnav__menu">
-                <li class="gnav__menu__item">
-                  <a href="/">トップページ</a>
-                </li>
-                <li class="gnav__menu__item">
-                  <a href="/story/">開発ストーリー</a>
-                </li>
-                <li class="gnav__menu__item"><a href="#">会社概要</a></li>
-                <li class="gnav__menu__item">
-                  <a href="#">お問合せ</a>
-                </li>
-                <li class="icons gnav__menu__item">
-                  <a
-                    href="https://www.instagram.com/hugm_official/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/images/common/icon_instagram.png" alt="「hugm（ハグム）ナチュラルシャンプーのinstagramアイコン"
-                  /></a>
-
-                  <a
-                    href="https://www.facebook.com/hugmofficial"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/images/common/icon_facebook.png" alt="「hugm（ハグム）ナチュラルシャンプーのfacebookアイコン"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
     <main id="main">
       <div id="main_visual">
         <ul class="slider">
@@ -121,7 +111,11 @@
                 >
               </dt>
             </dl>
-            <img data-src="/images/top/slide01.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像1" class="lazyload"/>
+            <img
+              src="./images/top/slide01.jpg"
+              alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像1"
+              class="lazyload"
+            />
           </li>
           <li>
             <dl class="inner">
@@ -134,7 +128,11 @@
                 >
               </dt>
             </dl>
-            <img data-src="/images/top/slide02.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像2" class="lazyload"/>
+            <img
+              src="./images/top/slide02.jpg"
+              alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像2"
+              class="lazyload"
+            />
           </li>
           <li>
             <dl class="inner">
@@ -147,7 +145,11 @@
                 >
               </dt>
             </dl>
-            <img data-src="/images/top/slide03.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像3" class="lazyload"/>
+            <img
+              src="./images/top/slide03.jpg"
+              alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像3"
+              class="lazyload"
+            />
           </li>
           <li>
             <dl class="inner">
@@ -160,7 +162,11 @@
                 >
               </dt>
             </dl>
-            <img data-src="/images/top/slide04.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像4" class="lazyload"/>
+            <img
+              src="./images/top/slide04.jpg"
+              alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像4"
+              class="lazyload"
+            />
           </li>
           <li>
             <dl class="inner">
@@ -173,7 +179,11 @@
                 >
               </dt>
             </dl>
-            <img data-src="/images/top/slide05.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像5"  class="lazyload"/>
+            <img
+              src="./images/top/slide05.jpg"
+              alt="「hugm（ハグム）ナチュラルシャンプーのスライド画像5"
+              class="lazyload"
+            />
           </li>
         </ul>
       </div>
@@ -189,7 +199,9 @@
             「わたし」のためのシャンプーから<br />
             「わたしたち」のためのシャンプーへ。<br /><br />
 
-            キレイな髪のその先にある「つながり」をキーワードに<br />
+            キレイな髪のその先にある<br
+              class="sponly"
+            />「つながり」をキーワードに<br />
             みなさまの暮らしに寄り添っていきます。<br /><br />
 
             リニューアルまでの間、こちらのページで<br />
@@ -198,16 +210,18 @@
           </p>
         </div>
       </section>
-      <div class="Arrow">
-        <span class="Arrow-Item"></span>
-        <span class="Arrow-Item"></span>
-        <span class="Arrow-Item"></span>
+      <div class="separator">
+        <img src="./images/common/mark.png" alt="ロゴ" />
       </div>
       <section id="sec2" class="scroll">
+        <h2 class="t_center gold">message</h2>
         <div class="inner flex">
-          <img data-src="/images/top/img01.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのメッセージ" class="lazyload"/>
+          <img
+            data-src="./images/top/img01.jpg"
+            alt="「hugm（ハグム）ナチュラルシャンプーのメッセージ"
+            class="lazyload"
+          />
           <div>
-            <h2 class="gold">message</h2>
             <p>
               頑張るすべての女性に<br />
               気負わず抜け感のあるナチュラルな美しさを。<br />
@@ -216,26 +230,30 @@
               そんな想いをカタチにした<br />
               hugm（ハグム）ナチュラルシャンプー。<br /><br />
 
-              働き方やライフスタイルが変化するこの時代に、<br />
-              わたしたちはもう一度このコンセプトに立ち戻り、<br />
-              シャンプーを通した「つながり」を<br />
+              働き方やライフスタイルが変化するこの時代に、<br class="pconly" />
+              わたしたちはもう一度このコンセプトに立ち戻り、<br
+                class="pconly"
+              />
+              シャンプーを通した「つながり」を<br class="pconly" />
               みなさまと一緒に、つくっていきたいと考えています。
             </p>
           </div>
         </div>
       </section>
-      <div class="Arrow">
-        <span class="Arrow-Item"></span>
-        <span class="Arrow-Item"></span>
-        <span class="Arrow-Item"></span>
+      <div class="separator">
+        <img src="./images/common/mark.png" alt="ロゴ" />
       </div>
       <section id="sec3" class="scroll">
         <div class="inner">
           <h2 class="t_center gold">coming soon</h2>
           <ul class="flexWrap">
             <li>
-              <a href="/story">
-                <img data-src="/images/top/img02.jpg" alt="「hugm（ハグム）ナチュラルシャンプーの開発ストーリー"  class="lazyload"/>
+              <a href="./story">
+                <img
+                  data-src="./images/top/img02.jpg"
+                  alt="「hugm（ハグム）ナチュラルシャンプーの開発ストーリー"
+                  class="lazyload"
+                />
                 <dl>
                   <dt>開発ストーリー</dt>
                   <dd>2020.12.14 up</dd>
@@ -244,110 +262,82 @@
             </li>
             <li class="disabled">
               <a href="">
-                <img data-src="/images/top/img03.jpg" alt="「hugm（ハグム）ナチュラルシャンプーの茶の実" class="lazyload" />
+                <img
+                  data-src="./images/top/img03.jpg"
+                  alt="「hugm（ハグム）ナチュラルシャンプーの茶の実"
+                  class="lazyload"
+                />
                 <dl>
-                  <dt>茶の実</dt>
+                  <dt>茶の実について</dt>
                   <dd>2020.12.21 up</dd>
                 </dl></a
               >
             </li>
             <li class="disabled">
               <a href="">
-                <img data-src="/images/top/img04.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのawaについて"  class="lazyload"/>
+                <img
+                  data-src="./images/top/img04.jpg"
+                  alt="「hugm（ハグム）ナチュラルシャンプーの泡について"
+                  class="lazyload"
+                />
                 <dl>
-                  <dt>awaについて</dt>
+                  <dt>泡について</dt>
                   <dd>2020.12.28 up</dd>
                 </dl></a
               >
             </li>
             <li class="disabled">
               <a href="">
-                <img data-src="/images/top/img05.jpg" alt="「hugm（ハグム）ナチュラルシャンプーのKAORIについて"  class="lazyload"/>
+                <img
+                  data-src="./images/top/img05.jpg"
+                  alt="「hugm（ハグム）ナチュラルシャンプーの香りについて"
+                  class="lazyload"
+                />
                 <dl>
-                  <dt>KAORIについて</dt>
+                  <dt>香りについて</dt>
                   <dd>2021.1.6 up</dd>
                 </dl></a
               >
             </li>
           </ul>
-          <div class="t_center">
-            <a href="" class="buttom_more">more ></a>
-            <div class="icons">
-              <a
-                href="https://www.instagram.com/hugm_official/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/images/common/icon_instagram.png" alt="「hugm（ハグム）ナチュラルシャンプーのinstagramアイコン"
-              /></a>
+        </div>
+      </section>
+      <section>
+        <div class="t_center">
+          <!--<a href="" class="buttom_more">more ></a>-->
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/hugm_official/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/common/icon_instagram.png"
+                alt="「hugm（ハグム）ナチュラルシャンプーのinstagramアイコン"
+            /></a>
 
-              <a
-                href="https://www.facebook.com/hugmofficial"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/images/common/icon_facebook.png" alt="「hugm（ハグム）ナチュラルシャンプーのfacebookアイコン"
-              /></a>
-            </div>
+            <a
+              href="https://www.facebook.com/hugmofficial"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/common/icon_facebook.png"
+                alt="「hugm（ハグム）ナチュラルシャンプーのfacebookアイコン"
+            /></a>
           </div>
         </div>
       </section>
     </main>
-    <footer id="footer">
-      <div class="footerWrap inner">
-        <ul class="flex">
-          <li>
-            <a
-              href="https://www.tealifeir.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >会社概要</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://tealife.co.jp/help/tradelaw"
-              target="_blank"
-              rel="noopener noreferrer"
-              >特定商法取引法に基づく表記</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://tealife.co.jp/help/privacy"
-              target="_blank"
-              rel="noopener noreferrer"
-              >個人情報保護について</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://tealife.co.jp/user_data/kiyaku"
-              target="_blank"
-              rel="noopener noreferrer"
-              >利用規約</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://tealife.co.jp/contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              >お問合せ</a
-            >
-          </li>
-        </ul>
-        <p>Copyright © TeaLife All rights Reserved.</p>
-      </div>
-    </footer>
     <script>
-      $(function(){
+       footer();
+      $(function () {
         $("img.lazyload").lazyload({
           effect: "fadeIn",
           threshold: 1,
           effectspeed: 500,
+        });
       });
-      })
-  </script>
+    </script>
   </body>
 </html>

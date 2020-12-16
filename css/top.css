@@ -25,16 +25,19 @@
   padding-top: 18vw;
 }
 #main_visual .slider .mainText {
-  font-size: 6.6rem;
+  font-size: 8.2rem;
   color: #fff;
   line-height: 1;
   margin-bottom: 1rem;
   font-weight: normal;
+  text-shadow: 0 0px 10px rgba(0,0,0,.2);
 }
 #main_visual .lead span {
-  background: rgba(209, 194, 127, 0.6);
-  color: #fff;
-  font-size: 2.6rem;
+    background-color: #fff;
+    color: #d1c27f;
+/*  background: rgba(209, 194, 127, 0.6);
+  color: #fff;*/
+  font-size: 3.2rem;
   line-height: 2;
   padding: 3px;
 }
@@ -46,8 +49,8 @@ section {
   text-align: center;
 }
 #sec2 {
-  background: #f6efcf;
-  padding: 10rem 1rem;
+  background: #faf9e6;
+  padding: 5rem 1rem 7rem;
 }
 
 #sec2 .flex {
@@ -115,6 +118,11 @@ section {
   pointer-events: none;
 }
 
+.separator {
+    margin: 8rem auto;
+    width: 51px;
+}
+
 .Arrow {
   position: relative;
   height: 80px;
@@ -146,6 +154,15 @@ span.Arrow-Item {
   height: 20px;
   transform: rotate(90deg) translateX(-6px);
 }
+
+.pconly{
+  display:block;
+}
+.sponly{
+  display:none;
+}
+
+
 @media screen and (max-width: 767px) {
   #sec1 {
     opacity: 1!important;
@@ -169,7 +186,7 @@ span.Arrow-Item {
   }
 
   #main_visual {
-    height: 50vh;
+    height: 60vh;
   }
   #main_visual .inner {
     /* padding-top: 100vw; */
@@ -179,14 +196,14 @@ span.Arrow-Item {
     position: absolute;
     top: 0;
     width: 100%;
-    left: 55%;
+    left: 52%;
     transform: translateX(-50%);
-    padding-top: 37vw;
+    padding-top: 44vw;
   }
   #main_visual .slider img {
     max-width: none;
     width: auto;
-    height: 66vw;
+    height: 100vw;
     position: absolute;
     top: 0;
     left: 50%;
@@ -200,16 +217,12 @@ span.Arrow-Item {
     margin-bottom: 1rem;
     font-weight: normal;
   }
-  #main_visual .lead span {
-    font-size: 1.8rem;
-    padding: 3px;
-  }
 
   #main_visual .lead span {
-    background-color: #d1c27f;
-    color: #fff;
-    font-size: 2.6rem;
-    line-height: 2;
+    background-color: #fff;
+    color: #d1c27f;
+    font-size: 1.8rem;
+    line-height: 2.2;
     padding: 3px;
   }
   .footerWrap li {
@@ -255,5 +268,15 @@ span.Arrow-Item {
   .opening__text {
     display: none;
     width: 65vw;
+  }
+  .pconly{
+    display:none;
+  }
+  .sponly{
+    display:block;
+  }
+  
+  .separator {
+    width: 36px;
   }
 }

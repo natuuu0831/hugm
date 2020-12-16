@@ -274,6 +274,7 @@ h2 .small.sub {
   font-size: 2rem;
   line-height: 1;
 }
+
 #footer {
   display: block;
   margin-top: 5rem;
@@ -294,6 +295,15 @@ h2 .small.sub {
 .footerWrap li:last-child {
   border-right: 1px solid #666464;
 }
+
+.footerWrap.inner ul li {
+    font-size: .7em;
+}
+.footerWrap.inner ul + p.copyright {
+    font-size: .6em;
+    margin: 0 auto 1%;
+}
+
 .fadein {
   opacity: 1 !important;
   transition: 1s;

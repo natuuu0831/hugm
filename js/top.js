@@ -17,5 +17,5 @@ $(window).on("load", function () {
       pauseOnFocus: false,
       pauseOnHover: false,
     });
-  }, 4500);
+  }, 2000);
 });
