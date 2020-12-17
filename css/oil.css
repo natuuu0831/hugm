@@ -11,19 +11,26 @@ h2.gold {
   padding: 5rem 0;
   margin: 6rem 0 5rem;
 }
-#sec1 .inner {
+section .inner {
   width: 900px;
+  line-height: 1.9;
 }
 
 #sec1 .flexWrap {
   align-items: center;
 }
-#sec1 .flexWrap p {
+#sec2 .flexWrap p {
   width: 47%;
   font-size: 1.9rem;
-  line-height: 1.9;
+  
 }
-
+#sec3 .inner{
+  padding: 45px;
+  padding-top: 15px;
+}
+#sec3 p{
+  margin-bottom: 25px;
+}
 @media screen and (max-width: 767px) {
   #sec1 .flexWrap img {
     width: 100%;
@@ -34,14 +41,25 @@ h2.gold {
     align-items: center;
     flex-direction: column-reverse;
   }
-  #sec1 .inner {
-    width: 98%;
-    box-sizing: border-box;
-  }
-
-  #sec1 .flexWrap p {
+  section .inner {
     width: 100%;
+    box-sizing: border-box;
     font-size: 1.8rem;
-    line-height: 1.9;
+  }
+  #sec2 .flexWrap img{
+    width: 95%;
+    margin: 0 auto 3vw;
+
+  }
+  #sec2 .flexWrap p {
+    width: 100%;
+  }
+  #sec3 .inner{
+    width: 100%;
+    padding: 3vw 10px 4vw;
+  }
+  #sec3 .flexWrap img{
+    width: 47%;
+    margin-bottom: 7%;
   }
 }
