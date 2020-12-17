@@ -42,7 +42,7 @@ section .inner {
     flex-direction: column-reverse;
   }
   section .inner {
-    width: 100%;
+    width: 98%;
     box-sizing: border-box;
     font-size: 1.8rem;
   }
@@ -56,7 +56,7 @@ section .inner {
   }
   #sec3 .inner{
     width: 100%;
-    padding: 3vw 10px 4vw;
+    padding: 3vw 15px 4vw;
   }
   #sec3 .flexWrap img{
     width: 47%;
