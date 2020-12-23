@@ -27,24 +27,28 @@ $(window).on("scroll", function () {
     return flug;
   }, 200);
 });
+
+
 /*----- include -----*/
-function footer() {
+function footer(rootDir) {
   $.ajax({
-    url: "/include/footer.html",
+    url: rootDir + "include/footer.html",
     cache: false,
     async: false,
     dataType: "html",
   }).done(function (data) {
+    data = data.replace(/\{\$root\}/g, rootDir);
     document.write(data);
   });
 }
-function header(){
+function header(rootDir){
   $.ajax({
-    url: "/include/header.html",
+    url: rootDir + "include/header.html",
     cache: false,
     async: false,
     dataType: 'html'
   }).done( function(data){
+    data = data.replace(/\{\$root\}/g, rootDir);
     document.write(data);
   });
 }
