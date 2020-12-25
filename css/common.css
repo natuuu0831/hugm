@@ -384,6 +384,12 @@ h3 {
   #main_visual {
     height: 55vw;
   }
+  #main_visual img {
+    min-width: 100%;
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
   h3{
     font-size: 2.5rem;
     margin: 4vw 0;
