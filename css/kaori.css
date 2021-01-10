@@ -1,0 +1,7 @@
+@import "./oil.css";
+@import "./awa.css";
+@media screen and (max-width: 767px) {
+  figcaption {
+    text-align: center;
+  }
+}

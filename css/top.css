@@ -30,12 +30,12 @@
   line-height: 1;
   margin-bottom: 1rem;
   font-weight: normal;
-  text-shadow: 0 0px 10px rgba(0,0,0,.2);
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 #main_visual .lead span {
-    background-color: #fff;
-    color: #d1c27f;
-/*  background: rgba(209, 194, 127, 0.6);
+  background-color: #fff;
+  color: #d1c27f;
+  /*  background: rgba(209, 194, 127, 0.6);
   color: #fff;*/
   font-size: 3.2rem;
   line-height: 2;
@@ -119,8 +119,8 @@ section {
 }
 
 .separator {
-    margin: 8rem auto;
-    width: 51px;
+  margin: 8rem auto;
+  width: 51px;
 }
 
 .Arrow {
@@ -155,18 +155,17 @@ span.Arrow-Item {
   transform: rotate(90deg) translateX(-6px);
 }
 
-.pconly{
-  display:block;
+.pconly {
+  display: block;
 }
-.sponly{
-  display:none;
+.sponly {
+  display: none;
 }
-
 
 @media screen and (max-width: 767px) {
   #sec1 {
-    opacity: 1!important;
-    transform: translateY(0)!important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
   #sec2 .flex {
     display: block;
@@ -269,13 +268,13 @@ span.Arrow-Item {
     display: none;
     width: 65vw;
   }
-  .pconly{
-    display:none;
+  .pconly {
+    display: none;
   }
-  .sponly{
-    display:block;
+  .sponly {
+    display: block;
   }
-  
+
   .separator {
     width: 36px;
   }

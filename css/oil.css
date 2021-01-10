@@ -22,13 +22,12 @@ section .inner {
 #sec2 .flexWrap p {
   width: 47%;
   font-size: 1.9rem;
-  
 }
-#sec3 .inner{
+#sec3 .inner {
   padding: 45px;
   padding-top: 15px;
 }
-#sec3 p{
+#sec3 p {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 767px) {
@@ -46,19 +45,18 @@ section .inner {
     box-sizing: border-box;
     font-size: 1.8rem;
   }
-  #sec2 .flexWrap img{
+  #sec2 .flexWrap img {
     width: 95%;
     margin: 0 auto 3vw;
-
   }
   #sec2 .flexWrap p {
     width: 100%;
   }
-  #sec3 .inner{
+  #sec3 .inner {
     width: 100%;
     padding: 3vw 15px 4vw;
   }
-  #sec3 .flexWrap img{
+  #sec3 .flexWrap img {
     width: 47%;
     margin-bottom: 7%;
   }

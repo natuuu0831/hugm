@@ -1,18 +1,18 @@
-@import './oil.css';
-figcaption{
+@import "./oil.css";
+figcaption {
   text-align: center;
   line-height: 1.2;
 }
 @media screen and (max-width: 767px) {
-  figure{
+  figure {
     width: 32%;
     line-height: 1;
     margin-bottom: 7%;
   }
-  figcaption{
+  figcaption {
     text-align: left;
   }
-  #sec3 .flexWrap img{
+  #sec3 .flexWrap img {
     width: 100%;
   }
 }
