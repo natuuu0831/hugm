@@ -1,0 +1,66 @@
+@import "./oil.css";
+@import "./awa.css";
+
+figure {
+  text-align: center;
+}
+
+.ingredientList {
+  background: #fff;
+  padding: 30px 50px;
+  margin-top: 40px;
+}
+.ingredientList h4 {
+  text-align: center;
+  color: #7e8454;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+.ingredientList .line {
+  background: linear-gradient(#fff 60%, #d7e4a5 60%, #d7e4a5 100%);
+}
+.ingredientList .notice {
+  text-align: right;
+  font-size: 1.6rem;
+}
+.ingredientList .notice .line {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+.ingredientBox {
+  border: 1px solid #b4a57f;
+  padding: 0px 20px 30px;
+  margin-bottom: 40px;
+}
+.ingredientBox ul {
+  justify-content: center;
+}
+.ingredientBox li {
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  figcaption {
+    text-align: center;
+  }
+  .ingredientList {
+    padding: 20px;
+  }
+  .ingredientBox:last-child li{
+    width: 100%;
+  }
+  .ingredientBox:last-child li img{
+    width: 44%;
+  }
+  .ingredientBox li {
+    width: 44%;
+    margin: 3%;
+  }
+  .ingredientBox li figure {
+    width: 100%;
+  }
+  .ingredientBox {
+    padding: 0px 0px 30px;
+  }
+}
