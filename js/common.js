@@ -4,6 +4,15 @@ $(function () {
     $(this).toggleClass("active");
     $(".gnav").stop().fadeToggle();
   });
+  var headerHight = $("header").outerHeight();
+  $(document).on("click", 'a[href^="#"]', function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+
+    var position = target.offset().top - headerHight;
+    $("html, body").animate({ scrollTop: position }, 550, "swing");
+    return false;
+  });
 });
 
 $(window).on("load", function () {
@@ -28,7 +37,6 @@ $(window).on("scroll", function () {
   }, 200);
 });
 
-
 /*----- include -----*/
 function footer(rootDir) {
   $.ajax({
@@ -41,13 +49,13 @@ function footer(rootDir) {
     document.write(data);
   });
 }
-function header(rootDir){
+function header(rootDir) {
   $.ajax({
     url: rootDir + "include/header.html",
     cache: false,
     async: false,
-    dataType: 'html'
-  }).done( function(data){
+    dataType: "html",
+  }).done(function (data) {
     data = data.replace(/\{\$root\}/g, rootDir);
     document.write(data);
   });
